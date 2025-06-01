@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url('assets/car-bg.png');
+  background-image: url('assets/main-bg.png');
   padding-top: 100px;
   background-size: cover;
   background-position: center;
@@ -18,24 +18,25 @@ body {
   justify-content: center;
   height: 70vh; /* a bit up from full center */
   text-align: center;
+  background-color: white;
 }
 
 .decoder-container h1 {
   font-size: 26px;
-  font-weight: 800;
-  color: white;
+  font-weight: 600;
+  color: #0e468f;
   margin-bottom: 1.5rem;
   font-family: var(--font-body);
 }
 
 .decoder-container label {
-  color: white;
+  color: gray;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
 .decoder-container p {
-  color: white;
+  color: black;
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   padding-top: 10px;
@@ -48,19 +49,19 @@ body {
   border-radius: 5px;
   margin-bottom: 1rem;
   width: 300px;
-  background-color: rgba(255, 255, 255, 0.29);
-  color: white;
+  background-color: rgba(169, 169, 169, 0.2);
+  color: black;
 }
 
 .decoder-container input::placeholder {
-  color: rgba(255, 255, 255, 0.39);
+  color: gray;
 }
 
 .decoder-container button {
   padding: 0.7rem 2rem;
   font-size: 1rem;
   font-family: var(--font-body);
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgb(14, 70, 143);
   border: none;
   border-radius: 30px;
   color: white;
@@ -69,13 +70,13 @@ body {
 }
 
 .decoder-container button:hover {
-  background-color: rgb(72, 74, 71);
+  background-color: rgb(12, 58, 120);
 }
 
 .results {
   min-height: 150px; /* reserve space even before result shows */
   margin-top: 2rem;
-  color: white;
+  color: black;
 }
 
 .results-container{
@@ -89,3 +90,24 @@ body {
   font-size: 20px;
   line-height: 1.8; /* slightly bigger spacing between items */
 }
+
+.results-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.qr-code {
+  text-align: center;
+}
+
+.qr-code img {
+  width: 200px;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+}
+

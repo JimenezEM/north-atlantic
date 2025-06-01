@@ -1,5 +1,6 @@
 import './App.css';
 import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 import { Route, Routes } from "react-router-dom";
 import { VinSearch } from "./components/VinSearch.jsx";
 
@@ -10,6 +11,7 @@ const App = () => {
         <Routes>
             <Route path="/" element={<VinSearch /> } />
           </Routes>
+        <Footer/>
     </div>
   );
 }
