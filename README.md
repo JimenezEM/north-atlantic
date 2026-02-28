@@ -11,21 +11,6 @@ Built with FastAPI (Python) on the backend and Vite + JavaScript on the frontend
 ## Tech Stack
 Vite, JavaScript, Fetch API, Python, FastAPI, Uvicorn, HTTPX
 
-## Project Structure
-north-atlantic/
-│
-├── backend/
-│   ├── venv/
-│   ├── main.py
-│   └── requirements.txt
-│
-├── frontend/
-│   ├── src/
-│   ├── package.json
-│   └── vite.config.js
-│
-└── README.md
-
 ## Project Context
 The user enters a VIN number in the frontend which sends a request to the FastAPI backend. The backend calls an external VIN decoding API where relevant vehicle data is filtered and returned. The frontend displays the decoded information
 
